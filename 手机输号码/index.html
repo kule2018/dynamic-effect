@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+<meta name="format-detection" content="telephone=no"/>
+<title>数字密码键盘</title>
+
+<link rel="stylesheet" href="css/pwdInput.css">
+
+</head>
+
+<style type="text/css">
+.pay{
+    height: 10.66666vw;
+    line-height: 10.66666vw;
+    border-radius: 1.33333vw;
+    background-color: #2196F3;
+    color: #fff;
+    text-align: center;
+}
+</style>
+
+<body>
+
+<div class="pay" onClick="open1()">
+	付款
+</div>
+
+<script src="js/pwdInput.js"></script>
+<script>
+function open1() {
+	isPwdInput.open(function(data) {
+		console.log(data);
+	});
+}
+</script>
+
+</body>
+</html>
